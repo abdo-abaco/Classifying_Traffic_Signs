@@ -24,11 +24,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/index1.png "Visualization"
 [image2]: ./examples/index2.png "Visualization"
 [image3]: ./examples/index3.png "Visualization"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./traffic_signs_data/1.jpg "Traffic Sign 1"
+[image5]: ./traffic_signs_data/2.jpg "Traffic Sign 2"
+[image6]: ./traffic_signs_data/3.jpg "Traffic Sign 3"
+[image7]: ./traffic_signs_data/4.jpg "Traffic Sign 4"
+[image8]: ./traffic_signs_data/5.jpg "Traffic Sign 5"
 
 
 
