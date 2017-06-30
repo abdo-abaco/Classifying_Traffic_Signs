@@ -84,15 +84,17 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
+| Input Layer         		| 32x32x3 RGB image   							| 
 | Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
-| Average pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
+| Average pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 3x3	    |    outputs 10x10x16 				   									|
+| RELU					|												|
+| Average pooling	      	| 2x2 stride,  outputs 5x5x6 				|
+| Fully connected		|         									|
+| Softmax				|        									|
 |						|												|
-|						|												|
+
  
 
 
