@@ -35,9 +35,13 @@ The goals / steps of this project are the following:
 ### Data Set Summary & Exploration
 
 Number of training examples = 34799
+
 Number of validation examples = 4410
+
 Number of testing examples = 12630
+
 Image data shape = (32, 32, 3)
+
 Number of classes = 43
 
 
@@ -65,9 +69,6 @@ Test Set
 
 As a first step, I decided to convert the images to grayscale but then
 learned the model performs better in the color scale.
-
-Here is an example of a traffic sign image before and after grayscaling.
-
 
 I then normalized the image data because it seemed to improve performance.
 
