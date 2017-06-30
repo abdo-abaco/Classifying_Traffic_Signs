@@ -47,13 +47,16 @@ Number of classes = 43
 
 A distribution of the different classes of the traffic signs.
 
-Test Set
+Training Set
+
 ![alt text][image1]
 
 Validation Set
+
 ![alt text][image2]
 
 Test Set
+
 ![alt text][image3]
 
 ###Design and Test a Model Architecture
