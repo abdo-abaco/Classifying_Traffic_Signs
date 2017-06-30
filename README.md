@@ -90,17 +90,26 @@ My final model consisted of the following layers:
 | Average pooling	      	| 2x2 stride,  outputs 14x14x6 				|
 | Convolution 3x3	    |    outputs 10x10x16 				   									|
 | RELU					|												|
-| Average pooling	      	| 2x2 stride,  outputs 5x5x6 				|
-| Fully connected		|         									|
-| Softmax				|        									|
-|						|												|
+| Average pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Flatten		|       Input = 5x5x16. Output = 400  									|
+| Fully Connected				|        Input = 400. Output = 200									|
+| RELU					|												|
+| DROPOUT					|												|
+| Fully Connected				|        Input = 200. Output = 120									|
+| RELU					|												|
+| DROPOUT					|												|
+| Fully Connected				|        Input = 120. Output = 43									|
 
  
 
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+### Training the Nueral Network 
 
-To train the model, I used an ....
+EPOCHS = 30
+
+BATCH_SIZE = 150
+
+rate = 0.002
 
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
