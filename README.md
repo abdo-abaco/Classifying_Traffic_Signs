@@ -32,7 +32,7 @@ The goals / steps of this project are the following:
 
 
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
 Number of training examples = 34799
 Number of validation examples = 4410
@@ -43,7 +43,7 @@ Number of classes = 43
 
 
 
-####2. Include an exploratory visualization of the dataset.
+### Visualization of the dataset.
 
 A distribution of the different classes of the traffic signs.
 
@@ -59,27 +59,22 @@ Test Set
 
 ![alt text][image3]
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+#### Preproccesing the Images via normalization
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step, I decided to convert the images to grayscale but then
+learned the model performs better in the color scale.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
 
-As a last step, I normalized the image data because ...
+I then normalized the image data because it seemed to improve performance.
 
-I decided to generate additional data because ... 
+I learned that CNNs are not rotation invariant so generating
+rotated data can be very useful, I have not implemented this step.
 
-To add more data to the the data set, I used the following techniques because ... 
 
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
