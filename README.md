@@ -103,7 +103,12 @@ My final model consisted of the following layers:
 | DROPOUT					|												|
 | Fully Connected				|        Input = 120. Output = 43									|
 
- 
+The first architecture used was the same LeNet model one execept with different dimensions used on the final layers.
+These dimensions were fine-tuned to produce better results.
+
+The initial architecture used small dimensions to try to pick up the feautures and patters which span more pixels.
+
+Max pooling was replaced with average pooling. The step size doubled and demensions changed to bigger values on the final layer these were all experimental.
 
 
 ### Training the Nueral Network 
@@ -115,47 +120,25 @@ BATCH_SIZE = 150
 rate = 0.002
 
 
-
 My final model results were:
 * training set accuracy of 0.92
 * validation set accuracy of 0.92
 * test set accuracy of 0.91
 
-If an iterative approach was chosen:
-The first architecture used was the same LeNet model one execept with different dimensions used on the final layers.
-These dimensions were fine-tuned to produce better results.
-
-
-* What were some problems with the initial architecture?
-The initial architecture used small dimensions to try to pick up the feautures and patters which span more pixels.
-
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-Max pooling was replaced with average pooling. The step size doubled and demensions changed to bigger values on the final layer these were all experimental.
-
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 Dropout is used to prevent overfitting. The cost function tends to level at a local minimum and randomizing some weights can cause it to escape this local minimum so that it converges at a more global minumum.
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
 
 9 out of 10 times is very evident that the neural network has potential to be very effective.
  
 
-###Test a Model on New Images
-
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+### Test a Model on New Images
 
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
-
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+The first image might be difficult to classify because it is completely unknown to the neural network.
 
 Here are the results of the prediction:
 
