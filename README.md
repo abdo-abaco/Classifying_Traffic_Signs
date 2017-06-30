@@ -22,8 +22,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/index1.png "Visualization"
-[image2]: ./examples/index1.png "Visualization"
-[image3]: ./examples/index1.png "Visualization"
+[image2]: ./examples/index2.png "Visualization"
+[image3]: ./examples/index3.png "Visualization"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -34,13 +34,26 @@ The goals / steps of this project are the following:
 
 ###Data Set Summary & Exploration
 
+Number of training examples = 34799
+Number of validation examples = 4410
+Number of testing examples = 12630
+Image data shape = (32, 32, 3)
+Number of classes = 43
+
+
 
 
 ####2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+A distribution of the different classes of the traffic signs.
 
-![alt text][image1]
+![alt text][image2]
+
+
+![alt text][image2]
+
+
+![alt text][image2]
 
 ###Design and Test a Model Architecture
 
