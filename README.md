@@ -103,12 +103,25 @@ My final model consisted of the following layers:
 | DROPOUT					|												|
 | Fully Connected				|        Input = 120. Output = 43									|
 
+
+What was the first architecture that was tried and why was it chosen?
+
 The first architecture used was the same LeNet model one execept with different dimensions used on the final layers.
 These dimensions were fine-tuned to produce better results.
 
+What were some problems with the initial architecture?
 The initial architecture used small dimensions to try to pick up the feautures and patters which span more pixels.
 
+How was the architecture adjusted and why was it adjusted?
 Max pooling was replaced with average pooling. The step size doubled and demensions changed to bigger values on the final layer these were all experimental.
+
+Which parameters were tuned? How were they adjusted and why?
+The step size was slightly increase so that the training converges faster.
+
+What are some of the important design choices and why were they chosen?
+etc. ?
+A few layers were chosen to capture the complex shapes of the traffic images.
+
 
 
 ### Training the Nueral Network 
